@@ -1,0 +1,15 @@
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\bin\Debug\LEDcontroldemo.exe.config
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\bin\Debug\LEDcontroldemo.exe
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\bin\Debug\LEDcontroldemo.pdb
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo.csprojAssemblyReference.cache
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\MainWindow.g.cs
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\App.g.cs
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo_MarkupCompile.cache
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo_MarkupCompile.lref
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\MainWindow.baml
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo.g.resources
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo.Properties.Resources.resources
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo.csproj.GenerateResource.cache
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo.csproj.CoreCompileInputs.cache
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo.exe
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDcontroldemo\obj\Debug\LEDcontroldemo.pdb

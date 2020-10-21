@@ -1,0 +1,11 @@
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDmatrixSDK\bin\Debug\LEDmatrixSDK.dll
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDmatrixSDK\bin\Debug\LEDmatrixSDK.pdb
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDmatrixSDK\obj\Debug\LEDmatrixSDK.csproj.CoreCompileInputs.cache
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDmatrixSDK\obj\Debug\LEDmatrixSDK.dll
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDmatrixSDK\obj\Debug\LEDmatrixSDK.pdb
+C:\Users\edcrf\Documents\GitHub\liftStorage_MultipleExport\STE_Lift_WMS_System\LEDmatrixSDK\LEDmatrixSDK\obj\Debug\LEDmatrixSDK.csprojAssemblyReference.cache
+C:\Users\edcrf\source\repos\LEDTest\LEDmatrixSDK\LEDmatrixSDK\bin\Debug\LEDmatrixSDK.dll
+C:\Users\edcrf\source\repos\LEDTest\LEDmatrixSDK\LEDmatrixSDK\bin\Debug\LEDmatrixSDK.pdb
+C:\Users\edcrf\source\repos\LEDTest\LEDmatrixSDK\LEDmatrixSDK\obj\Debug\LEDmatrixSDK.csproj.CoreCompileInputs.cache
+C:\Users\edcrf\source\repos\LEDTest\LEDmatrixSDK\LEDmatrixSDK\obj\Debug\LEDmatrixSDK.dll
+C:\Users\edcrf\source\repos\LEDTest\LEDmatrixSDK\LEDmatrixSDK\obj\Debug\LEDmatrixSDK.pdb

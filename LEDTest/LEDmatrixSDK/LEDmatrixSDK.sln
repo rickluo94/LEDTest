@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LEDcontroldemo", "LEDcontroldemo\LEDcontroldemo.csproj", "{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LEDmatrixSDK", "LEDmatrixSDK\LEDmatrixSDK.csproj", "{AB867CA3-881B-4FBA-9CD5-35FDE9654459}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Debug|x86.ActiveCfg = Debug|x86
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Debug|x86.Build.0 = Debug|x86
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Release|x86.ActiveCfg = Release|x86
+		{EB07A2A0-DE87-4178-90CA-D2EF6D80BB62}.Release|x86.Build.0 = Release|x86
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Debug|x86.Build.0 = Debug|Any CPU
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB867CA3-881B-4FBA-9CD5-35FDE9654459}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {857CD776-8E9B-41C2-BF42-D882F01B5798}
+	EndGlobalSection
+EndGlobal

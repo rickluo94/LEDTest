@@ -1,0 +1,141 @@
+﻿<Window x:Class="LEDcontroldemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LEDcontroldemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="471" Width="564">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="485通訊" Height="45" Margin="0,0,0,0" VerticalAlignment="Top">
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal" >
+                <Label x:Name="label" Content="COM"/>
+                <TextBox x:Name="com_TextBox" TextWrapping="Wrap" Text="4"/>
+                <Label x:Name="label1" Content="傳輸率"/>
+                <ComboBox x:Name="baudrate_comboBox" SelectedIndex="1">
+                    <ComboBoxItem Content="9600" HorizontalAlignment="Left" Width="118"/>
+                    <ComboBoxItem Content="56700" HorizontalAlignment="Left" Width="118"/>
+                </ComboBox>
+                <Label x:Name="label2" Content="屏號"/>
+                <TextBox x:Name="ScreenID_TextBox" TextWrapping="Wrap" Text="1"/>
+                <Label x:Name="label3" Content="控制器版本"/>
+                <ComboBox x:Name="card_type_ComboBox" SelectedIndex="0">
+                    <ComboBoxItem Content="任意" HorizontalAlignment="Left" Width="98"/>
+                    <ComboBoxItem Content="BX_5K1" HorizontalAlignment="Left" Width="98"/>
+                </ComboBox>
+                <Button x:Name="Connect_button" Content="連線" Click="Connect_button_Click"/>
+                <Label x:Name="label4" Content="超時時間設置"/>
+                <TextBox x:Name="nTime_textBox" TextWrapping="Wrap" Text="10"/>
+                <Button x:Name="nTime_button2" Content="設置" Click="nTime_button2_Click"/>
+                <Button x:Name="disconnect_button" Content="斷開" Click="disconnect_button_Click"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="顯示區域" Height="45" Margin="0,50,0,0" VerticalAlignment="Top">
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal">
+                <Label x:Name="label5" Content="X"/>
+                <TextBox x:Name="AreaX_textBox" TextWrapping="Wrap" Text="0"/>
+                <Label x:Name="label6" Content="Y"/>
+                <TextBox x:Name="AreaYtextBox" TextWrapping="Wrap" Text="0"/>
+                <Label x:Name="label7" Content="寬度"/>
+                <TextBox x:Name="AreaWidth_textBox" TextWrapping="Wrap" Text="40"/>
+                <Label x:Name="label8" Content="高度"/>
+                <TextBox x:Name="AreaHeight_textBox" TextWrapping="Wrap" Text="16"/>
+                <Label x:Name="label15" Content="區域"/>
+                <TextBox x:Name="DynamicArealoc_textBox" TextWrapping="Wrap" Text="0"/>
+                <Label x:Name="label20" Content="區域極限"/>
+                <TextBox x:Name="MaxArea_textBox" TextWrapping="Wrap" Text="24" Width="40"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="groupBox2" Header="段落屬性" Margin="0,100,0,0" Height="45" VerticalAlignment="Top">
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal">
+                <Label x:Name="label9" Content="顯示行"/>
+                <ComboBox x:Name="SingleLine_comboBox" SelectedIndex="0">
+                    <ComboBoxItem Content="單行顯示" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="多行顯示" HorizontalAlignment="Left"/>
+                </ComboBox>
+                <Label x:Name="label10" Content="換行方式"/>
+                <ComboBox x:Name="NewLine_comboBox" SelectedIndex="0">
+                    <ComboBoxItem Content="手動換行" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="自動換行" HorizontalAlignment="Left"/>
+                </ComboBox>
+                <Label x:Name="label11" Content="行距"/>
+                <TextBox x:Name="Lines_sizes_textBox" TextWrapping="Wrap" Text="0"/>
+            </StackPanel>
+        </GroupBox>
+        <TextBox x:Name="AreaText_textBox" Height="76" Margin="0,150,0,0" TextWrapping="Wrap" Text="\FO000↓\FE000A12" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox4" Header="模式" Height="45" Margin="0,231,0,0" VerticalAlignment="Top">
+            <StackPanel Margin="0,0,0,0" Orientation="Horizontal">
+                <Label x:Name="label12" Content="運行模式"/>
+                <ComboBox x:Name="RunMode_comboBox" Width="118" SelectedIndex="0">
+                    <ComboBoxItem Content="自動循環顯示" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="完成後停留在最後一頁" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="超時未完成刪除該訊息" HorizontalAlignment="Left"/>
+                </ComboBox>
+                <Label x:Name="label13" Content="動態方式"/>
+                <ComboBox x:Name="DisplayMode_comboBox" SelectedIndex="0">
+                    <ComboBoxItem Content="靜止顯示" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="快速打出" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="向左移動" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="向右移動" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="向上移動" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="向下移動" HorizontalAlignment="Left"/>
+                </ComboBox>
+                <Label x:Name="label14" Content="速度"/>
+                <ComboBox x:Name="Speed_comboBox" SelectedIndex="9">
+                    <ComboBoxItem Content="1" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="2" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="3" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="4" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="5" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="6" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="7" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="8" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="9" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="10" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="11" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="12" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="13" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="14" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="15" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="16" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="17" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="18" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="19" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="20" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="21" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="22" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="23" HorizontalAlignment="Left"/>
+                    <ComboBoxItem Content="24" HorizontalAlignment="Left"/>
+                </ComboBox>
+                <Label Content="超時"/>
+                <TextBox x:Name="TimeOut_textBox" Height="23" TextWrapping="Wrap" Text="2"/>
+                <Label Content="停留"/>
+                <TextBox x:Name="StayTime_textBox" Height="23" TextWrapping="Wrap" Text="10"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="SendText_button" Content="送出" HorizontalAlignment="Left" Margin="10,281,0,0" VerticalAlignment="Top" Width="75" Click="SendText_button_Click"/>
+        <Button x:Name="Delete_button" Content="刪除" HorizontalAlignment="Left" Margin="90,281,0,0" VerticalAlignment="Top" Width="75" Click="Delete_button_Click"/>
+        <Label x:Name="label16" Content="托盤寬度(公分)" HorizontalAlignment="Left" Margin="10,309,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tableWidth_textBox" HorizontalAlignment="Left" Height="23" Margin="100,313,0,0" TextWrapping="Wrap" Text="125" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="label17" Content="總行數" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="totalRow_textBox" HorizontalAlignment="Left" Height="23" Margin="100,343,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.455,1.435"/>
+        <Label x:Name="label18" Content="指示區域" HorizontalAlignment="Left" Margin="10,369,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="tableArea_comboBox" HorizontalAlignment="Left" Margin="73,371,0,0" VerticalAlignment="Top" Width="82" SelectionChanged="tableArea_comboBox_SelectionChanged">
+            <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="98"/>
+            <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="98"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="98"/>
+            <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="98"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="98"/>
+            <ComboBoxItem Content="6" HorizontalAlignment="Left" Width="98"/>
+            <ComboBoxItem Content="7" HorizontalAlignment="Left" Width="98"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="98"/>
+        </ComboBox>
+        <TextBox x:Name="AreaText2_textBox" HorizontalAlignment="Left" Height="55" Margin="184,312,0,0" TextWrapping="Wrap" Text="|20200214|" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="SendText2_button" Content="區域二資訊" HorizontalAlignment="Left" Margin="184,372,0,0" VerticalAlignment="Top" Width="75" Click="SendText2_button_Click"/>
+        <Label x:Name="label19" Content="x" HorizontalAlignment="Left" Margin="184,287,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="AreaX2_textBox" HorizontalAlignment="Left" Height="18" Margin="204,291,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="35"/>
+        <Label x:Name="Label" Content="寬" HorizontalAlignment="Left" Margin="244,287,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="AreaWidth2_textBox" HorizontalAlignment="Left" Height="23" Margin="266,287,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="31"/>
+        <Button x:Name="double2_button" Content="Button" HorizontalAlignment="Left" Margin="395,325,0,0" VerticalAlignment="Top" Width="75" Click="double2_button_Click"/>
+    </Grid>
+</Window>
